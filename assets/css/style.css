@@ -1,10 +1,10 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
+ * Author: Stephen Zito
+ * URL: http://stevez0r.github.io
  *
- * Project Name: NYC Design
+ * Project Name: Portfolio
  * Version: 1.0
- * Date: 04-20-2014
+ * Date: 09-18-2014
  * URL: 
  */
 
@@ -128,11 +128,13 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 4px;
 	font-size: 80px;
 	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #headerwrap h4 {
 	font-weight: 400;
-	color: #ffffff
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #social {
@@ -189,11 +191,13 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 4px;
 	font-size: 80px;
 	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #workwrap h4 {
 	font-weight: 400;
-	color: #ffffff
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #aboutwrap {	
@@ -228,3 +232,5 @@ h1, h2, h3, h4, h5, h6 {
 .gallery img:hover {
 	opacity: 0.4;
 }
+
+
