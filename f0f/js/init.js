@@ -16,7 +16,7 @@
 			narrower:	{ range: '-840', href: 'css/style-narrower.css', containers: '95%!', grid: { zoom: 2 } },
 			mobile:		{ range: '-736', href: 'css/style-mobile.css', containers: '100%!', grid: { zoom: 3 } }
 		},
-		plugins: {
+		/*plugins: {
 			layers: {
 				config: {
 					transformTest: function() { return (skel.vars.isMobile); }
@@ -61,7 +61,7 @@
 					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span>'
 				}
 			}
-		}
+		}*/
 	});
 
 	$(function() {
