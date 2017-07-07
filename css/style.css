@@ -2638,6 +2638,10 @@ body:not([class*="bordery"]) .post-navi-single > .container {
   transform-origin: 0 0;
 }
 
+.socialmeida a:hover {
+  text-decoration-line: none;
+}
+
 /*  Social Bar */
 .social-bar {
   height: 60px;
@@ -3663,11 +3667,18 @@ a, a:hover, a:focus, #header .search-top-btn-class:hover,#header .wpml-translati
 .blog_meta a:hover,.breadcrumbs a:hover,.link-wrap a:hover,.archive-wrap h3 a:hover,.more-link:hover,.post-color-default,.latest-posts-tags a:hover,.pagenums .current,.page-numbers.current,.fullwidth-text-white .fullwrap-with-tab-nav-a:hover,.fullwrap-with-tab-nav-a:hover,.fullwrap-with-tab-nav-a.full-nav-actived,.fullwidth-text-white .fullwrap-with-tab-nav-a.full-nav-actived,a.liquid-more-icon.ux-btn:hover,.moudle .iterblock-more.ux-btn:hover,
 .gallery-info-property-con a,.tp-caption a:hover
 {
-  color: #CFBCA6;
+  /*color: #CFBCA6;*/
+  color: #000;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 .tagcloud a:hover,.related-post-wrap h3:before,.single-image-mask,input.idi_send:hover, .iconbox-content-hide .icon_text,.process-bar, .portfolio-caroufredsel-hover
 {
-  background-color: #CFBCA6;
+  /*background-color: #CFBCA6;*/
+  background-color: #fff;
 }
 
 
@@ -3894,7 +3905,8 @@ h3#reply-title small, #comments .nav-tabs li.active h3#reply-title .logged,#comm
 /* Portfolio List - Mask for Item */
 .grid-item-con:after,.product-caption
 {
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Button */
