@@ -71,7 +71,8 @@ body {
   position: relative; margin: 0; overflow-x: hidden; line-height: 1.5;
 }
 a, a:hover, a:focus, select:focus,textarea:focus, input[type="text"]:focus,input[type=email]:focus,input[type="search"]:focus,input[type="password"]:focus,input[type="submit"]:focus,button:focus {
-  text-decoration:none; outline:none;
+  /*text-decoration:none;*/ outline:none;
+  color: #000;
 }
 ol, ul {
   list-style: none;outline:none;
