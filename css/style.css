@@ -2639,6 +2639,10 @@ body:not([class*="bordery"]) .post-navi-single > .container {
   transform-origin: 0 0;
 }
 
+#navi a:hover{
+  text-decoration-line: none;
+}
+
 .socialmeida a:hover {
   text-decoration-line: none;
 }
