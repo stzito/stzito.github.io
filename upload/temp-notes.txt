@@ -1,0 +1,161 @@
+Happy Monday, DXD!
+
+I stumbled across this fun little iOS game a few days ago, but the story behind it truly piqued my interest.
+
+With a dream to be a professional game developer, a man with severe RSI was able to completely design and code a successful new game without his hands, using only voice and head-tracking software. This includes the programming (and artwork!) for the game all by this one-man team.
+
+Using new and brittle tools, he's now launched this casual game across many platforms including iOS, Xbox, Windows, and Mac. I happily paid the $3 to support his dream and have very much enjoyed the experience on my phone thus far.
+
+I thought Judith and others might find this story interesting as well -- you can get the whole read over at ArsTechnica (including video of the technology Rusty Moyher used):
+
+https://arstechnica.com/gaming/2018/02/coding-without-a-keystroke-the-hands-free-creation-of-a-full-video-game/
+
+Hope you all have a great day!
+
+
+-Stephen
+
+
+
+======================
+
+
+
+
+
+Notes above, Sketch tutorials, plugins, and resources below...
+
+---
+
+Big picture questions:
+
+*Standard artboard sizes for symbols/overrides?
+  - Colors: 24x24?
+  - Icons: 24x24?
+
+*How many shared libraries can we divide the design system into without becoming unwieldy for designers and Baseline to add and maintain?
+
+*Do certain important assets/symbols (e.g. Grids) need to be included in some or all of the library files?
+
+*Organizing overrides by creating folder naming standards (e.g. Colors/M2/Black #000)
+  - How many folders do we separate symbols into while maintaining balance between organization and number of sub-folders to navigate in overrides panel?
+
+*Naming/organization standards:
+  - Example naming structure: "icons/icon-name/size/[fill or outline]" with color palette as override within "fill" or "outline" symbol.
+  - Or remove "size" folder, e.g. "icons/calendar-24/fill"
+  - Can use a gray FPO "_blank" icon instead of "icon-name" for placeholders.
+
+---
+
+Separate libraries for:
+
+Effects (are these part of certain libraries, or need to have their own)?
+ - Shadows, rounded corners, strokes/outlines
+
+Colors
+ - Separate pages for each color palette (M2, OSMP, DBF, etc.)
+
+Icons
+ - SVG icon conversion tutorial: https://www.youtube.com/watch?v=ui218fRtrc0
+ - Sketch Icons plugin: https://github.com/AMoreaux/Sketch-Icons
+ - Import all icon SVGs
+ - Import colors from Colors library
+ - Icon color overrides using color masking layer (instead of creating icon symbol variations for every color).
+
+Typography
+ - One file with separate pages for each area of DXD (M2, OSMP, DBF, etc.)
+
+Grids
+ - M2 12-col grid system
+ - OSMP grid system
+
+Device Templates
+ - Diego's Sketch device templates
+
+Redline Template
+ - For manual placement of redlines
+ - Elements, annotations, dimensions/measurements, tap-targets, etc.
+ - Color standards for different measurement types (e.g. Sketch Measure's defaults)?
+ - Changing redline symbols to match Sketch Measure to ensure manual and automated/exported redlines look the same?
+
+M2 Components
+- Separate pages for each component type (tiles, forms, etc.)
+- Each component in its own artboard within appropriate page.
+- Unique artboard for each component size (i.e. responsive breakpoint)
+- All component variations/states of the same size (e.g. 320px mobile) in same artboard.
+
+M2 Example Screens
+- Example screens built from components only.
+
+M2 Wireframes?
+ - Grayscale wireframe layouts based on 12-column grid
+ - Grayscale versions of components, stripped of detail.
+ - For IxDs and quick grayscale mockups.
+ - Integrate Finto to rapidly iterate interactions and animations.
+
+OSMP Components
+
+OSMP Example Screens
+
+---
+
+Sketch video tutorials (production and process):
+
+- Advanced symbols and responsive resizing (Dev-friendly):
+https://www.youtube.com/watch?v=2PvqgI3Jo8Q
+
+- Designing icons inside components (with organization + overrides):
+https://www.youtube.com/watch?v=5TF8JXvlInA
+
+- Dynamic Icons in Sketch:
+https://www.youtube.com/watch?v=1rJ1WyQ6lU0
+
+---
+
+Sketch Plugins:
+
+Sketch Measure (Free automated redlines without external/cloud software, also exports Zeplin-like interactive HTML specs):
+https://github.com/utom/sketch-measure
+
+Stark (Accessibility / contrast checker plugin for Sketch):
+http://www.getstark.co/
+Really amazing plugin!
+
+Bunch text change (change multiple text elements at once):
+https://github.com/vdmp/bunch-text-chcange-sketch-plugin
+
+Auto Layout (advanced resizing and pinning elements beyond Sketch's current features):
+https://animaapp.github.io/Auto-Layout/
+
+Fluid for Sketch (similar to Auto Layout: resizing elements for responsive layouts):
+https://github.com/matt-curtis/Fluid-for-Sketch
+
+Flow (Create timeline-based animations in Sketch, with exportable code unlike Flinto):
+http://createwithflow.com/
+
+---
+
+Other resources:
+
+Full list of Sketch keyboard shortcuts:
+http://sketchshortcuts.com/
+
+Converting PSDs to Sketch:
+https://avocode.com/convert-psd-to-sketch
+
+Quickly resizing objects in Sketch (with keyboard shortcuts):
+https://www.youtube.com/watch?v=JDZP_6Y78ek
+
+React Sketch.app (AirBnB, working with coded components inside Sketch):
+http://airbnb.io/react-sketchapp/
+*Previously spoke with Heath Kamp about this advanced functionality to bridge the production gap between Design + Dev by manipulating actual production code elements within Sketch. Very interesting read.
+
+Sketch Resources for Designers:
+https://sketch.fordesignrs.com/
+
+Sketch Repo (More Sketch resources and UI kits):
+https://sketchrepo.com/
+
+
+
+
